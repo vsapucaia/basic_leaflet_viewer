@@ -36,6 +36,7 @@
     <script language="JavaScript">
         var leafMap = L.map('mapid').setView([52.519825, 13.389573], 14);
 
+        // accessing own mapnik server with our building blocks geometries
         var tilemap = L.tileLayer('http://ec2-35-156-174-167.eu-central-1.compute.amazonaws.com/osmbright/{z}/{x}/{y}.png', {
             attribution: '&copy;OpenStreetMap'
         }).addTo(leafMap);
